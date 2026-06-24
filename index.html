@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The State of AI-Search Readiness 2026 — 189 companies, 10 industries (open data)</title>
+<meta name="description" content="An open dataset and study: how readable are 189 well-known companies to AI search engines (ChatGPT, Perplexity, Google AI)? Scored across 10 industries. Healthtech and news media score worst; OpenAI and GitHub scored a D, Klarna an F. Free CSV + methodology." />
+<link rel="canonical" href="https://epistemedeus.github.io/ai-search-readiness/" />
+<meta property="og:title" content="The State of AI-Search Readiness 2026 — 189 companies, 10 industries" />
+<meta property="og:description" content="Open data: how readable are 189 companies to AI search? Healthtech and news media worst; OpenAI/GitHub a D, Klarna an F." />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"AI-Search Readiness Study 2026 (189 companies, 10 industries)","description":"Scores (0-100) and letter grades for how readable 189 companies homepages are to AI search engines (ChatGPT, Perplexity, Google AI), across 10 industries. Scored on AI-crawler access, JSON-LD structured data, title/meta, Open Graph, XML sitemap, and llms.txt.","url":"https://epistemedeus.github.io/ai-search-readiness/","creator":{"@type":"Organization","name":"SameDayDesk","url":"https://samedaydesk.com/"},"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"keywords":["AI search readiness","generative engine optimization","GEO","ChatGPT","Perplexity","structured data"],"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://raw.githubusercontent.com/epistemedeus/ai-readiness/main/data/ai-search-readiness-2026.csv"}]}
+</script>
+<style>
+  :root{--bg:#0d1014;--card:#161a20;--ink:#e8e8e3;--dim:#9aa0a8;--line:#262b33;--acc:#ccff00;--good:#6fcf97;--bad:#e07a5f}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,Inter,system-ui,sans-serif}
+  .wrap{max-width:50rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+  a{color:var(--acc)}
+  .eyebrow{font:600 12px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin:0 0 1rem}
+  h1{font-size:clamp(1.9rem,1.3rem+2.4vw,3rem);line-height:1.06;letter-spacing:-.02em;margin:.2em 0}
+  h2{font-size:1.4rem;margin:2.4rem 0 .6rem}
+  .lead{font-size:1.2rem;color:var(--dim)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;margin:2rem 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;padding:.9rem 1rem}
+  .stat b{display:block;font-size:1.9rem;font-family:ui-monospace,monospace;line-height:1}
+  .stat span{color:var(--dim);font-size:.82rem}
+  .row{display:grid;grid-template-columns:8rem 1fr 2.5rem;align-items:center;gap:.6rem;margin:.35rem 0;font-size:.92rem}
+  .track{background:var(--line);border-radius:99px;height:.7rem;overflow:hidden}.fill{background:var(--acc);height:100%}
+  .v{font-family:ui-monospace,monospace;text-align:right}.lbl{color:var(--dim)}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}
+  th,td{text-align:left;padding:.45rem .55rem;border-bottom:1px solid var(--line)}
+  th{font:600 12px/1 ui-monospace,monospace;text-transform:uppercase;color:var(--dim)}
+  .num{font-family:ui-monospace,monospace}.gA{color:var(--good);font-weight:700}.gB{color:#7fb3d5;font-weight:700}.gC{color:var(--bad);font-weight:700}.gD{color:var(--bad);font-weight:700}.gF{color:var(--bad);font-weight:700}
+  .cta{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.5rem;margin:2.2rem 0}
+  .cta h2{margin-top:0}.btn{display:inline-block;margin:.5rem .5rem 0 0;background:var(--acc);color:#0a0b0d;font-weight:700;text-decoration:none;padding:.65rem 1.1rem;border-radius:9px}
+  .btn2{display:inline-block;margin:.5rem 0 0;color:var(--acc);border:1px solid #3a3f48;text-decoration:none;padding:.65rem 1.1rem;border-radius:9px}
+  .muted{color:var(--dim);font-size:.9rem}code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.1rem .4rem;font-size:.9em}
+  footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--dim);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Open data study · June 2026</p>
+  <h1>The State of AI-Search Readiness</h1>
+  <p class="lead">Can AI search engines — ChatGPT, Perplexity, Google AI — actually read the web's best-known companies? We scored <strong>189 companies across 10 industries</strong> on the technical fundamentals that decide whether a site is even eligible to be quoted. Here's what we found, with the full data free to download.</p>
+
+  <div class="stats">
+    <div class="stat"><b>189</b><span>companies scored</span></div>
+    <div class="stat"><b>81</b><span>average /100</span></div>
+    <div class="stat"><b>65</b><span>scored C, D or F</span></div>
+    <div class="stat"><b>10</b><span>industries</span></div>
+  </div>
+
+  <h2>Average score by industry</h2>
+  <p class="muted">Healthtech and news media are the hardest for AI search to read; marketing agencies and SaaS the easiest. (News publishers — locked in a citation fight with AI companies — score near the bottom.)</p>
+  <div class="chart">
+    <div class="row"><span class="lbl">Agencies</span><div class="track"><div class="fill" style="width:92%"></div></div><span class="v">92</span></div>
+    <div class="row"><span class="lbl">SaaS</span><div class="track"><div class="fill" style="width:87%"></div></div><span class="v">87</span></div>
+    <div class="row"><span class="lbl">Dev tools</span><div class="track"><div class="fill" style="width:86%"></div></div><span class="v">86</span></div>
+    <div class="row"><span class="lbl">E-commerce</span><div class="track"><div class="fill" style="width:85%"></div></div><span class="v">85</span></div>
+    <div class="row"><span class="lbl">AI startups</span><div class="track"><div class="fill" style="width:81%"></div></div><span class="v">81</span></div>
+    <div class="row"><span class="lbl">Enterprise</span><div class="track"><div class="fill" style="width:78%"></div></div><span class="v">78</span></div>
+    <div class="row"><span class="lbl">Fintech</span><div class="track"><div class="fill" style="width:76%"></div></div><span class="v">76</span></div>
+    <div class="row"><span class="lbl">Consumer apps</span><div class="track"><div class="fill" style="width:68%"></div></div><span class="v">68</span></div>
+    <div class="row"><span class="lbl">Media</span><div class="track"><div class="fill" style="width:64%"></div></div><span class="v">64</span></div>
+    <div class="row"><span class="lbl">Healthtech</span><div class="track"><div class="fill" style="width:63%"></div></div><span class="v">63</span></div>
+  </div>
+
+  <h2>The lowest scorers</h2>
+  <p class="muted">A low score isn't always an accident: some news publishers deliberately block AI crawlers. But most low scores come from missing JSON-LD structured data, JavaScript-only homepages, and no sitemap — fixable in an afternoon.</p>
+  <table>
+    <thead><tr><th>Company</th><th>Score</th><th>Grade</th><th>Industry</th></tr></thead>
+    <tbody>
+      <tr><td>arstechnica.com</td><td class="num">38</td><td class="gF">F</td><td>Media</td></tr>
+      <tr><td>klarna.com</td><td class="num">38</td><td class="gF">F</td><td>Fintech</td></tr>
+      <tr><td>bloomberg.com</td><td class="num">43</td><td class="gD">D</td><td>Media</td></tr>
+      <tr><td>canva.com</td><td class="num">43</td><td class="gD">D</td><td>Consumer apps</td></tr>
+      <tr><td>spotify.com</td><td class="num">43</td><td class="gD">D</td><td>Consumer apps</td></tr>
+      <tr><td>theguardian.com</td><td class="num">43</td><td class="gD">D</td><td>Media</td></tr>
+      <tr><td>boostability.com</td><td class="num">45</td><td class="gD">D</td><td>Agencies</td></tr>
+      <tr><td>carbonhealth.com</td><td class="num">45</td><td class="gD">D</td><td>Healthtech</td></tr>
+      <tr><td>chime.com</td><td class="num">45</td><td class="gD">D</td><td>Fintech</td></tr>
+      <tr><td>godaddy.com</td><td class="num">45</td><td class="gD">D</td><td>SaaS</td></tr>
+      <tr><td>gusto.com</td><td class="num">45</td><td class="gD">D</td><td>Fintech</td></tr>
+      <tr><td>hims.com</td><td class="num">45</td><td class="gD">D</td><td>Healthtech</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Methodology</h2>
+  <p>Each company's homepage was fetched once (June 23, 2026) and scored 0-100 on six signals: AI-crawler access (GPTBot, ClaudeBot, PerplexityBot, Google-Extended), JSON-LD structured data, title/meta, Open Graph tags, an XML sitemap, and llms.txt. It's a point-in-time, homepage-level snapshot, not a full-site audit. Scores change as sites update.</p>
+
+  <div class="cta">
+    <h2>Get the data &amp; check your own site</h2>
+    <p>The full dataset is free (CC-BY). Check any site in 10 seconds with the free checker, or browse the full sortable leaderboard.</p>
+    <a class="btn" href="https://raw.githubusercontent.com/epistemedeus/ai-readiness/main/data/ai-search-readiness-2026.csv">Download the CSV (189 rows)</a>
+    <a class="btn2" href="https://samedaydesk.com/tools/ai-readiness">Check your site free</a>
+    <a class="btn2" href="https://samedaydesk.com/reports/ai-search-readiness-leaderboard-2026.html">Full interactive leaderboard</a>
+  </div>
+
+  <footer>Data &amp; study by <a href="https://samedaydesk.com/">SameDayDesk</a>. Methodology &amp; CLI: <a href="https://github.com/epistemedeus/ai-readiness">github.com/epistemedeus/ai-readiness</a> · <code>npx github:epistemedeus/ai-readiness yoursite.com</code></footer>
+</div>
+</body>
+</html>
